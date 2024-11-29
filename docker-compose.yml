@@ -1,16 +1,11 @@
-
-
 services:
-  taxi-109:
+  frontend:
     build:
-      context: ./taxi-109  # Caminho para o frontend
-      dockerfile: ./taxi-109/Dockerfile  # Caminho correto para o Dockerfile do frontend
+      context: ./taxi-109
     ports:
       - "80:80"
-  
-  backend:
+  beckend:
     build:
-      context: ./backend  # Caminho para o backend
-      dockerfile: ./backend/Dockerfile  # Caminho correto para o Dockerfile do backend
+      context: ./beckend
     ports:
       - "5000:5000"
